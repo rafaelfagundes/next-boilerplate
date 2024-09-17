@@ -65,5 +65,7 @@
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.labelFormat": "short",
   "workbench.sideBar.location": "right",
-  "workbench.startupEditor": "newUntitledFile"
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.colorTheme": "Catppuccin Mocha"
 }
