@@ -1,12 +1,13 @@
 {
   "name": "next-boilerplate",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "next dev",
+    "format": "prettier src/ --write",
+    "lint": "next lint",
+    "start": "next start"
   },
   "dependencies": {
     "next": "14.2.12",
@@ -14,17 +15,17 @@
     "react-dom": "^18"
   },
   "devDependencies": {
-    "prettier-plugin-tailwindcss": "^0.6.6",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/node": "^20",
-    "@types/react": "^18",
     "@types/react-dom": "^18",
-    "eslint": "^8",
+    "@types/react": "^18",
     "eslint-config-next": "14.2.12",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-check-file": "^2.8.0",
     "eslint-plugin-n": "^17.10.2",
+    "eslint": "^8",
     "postcss": "^8",
+    "prettier-plugin-tailwindcss": "^0.6.6",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
