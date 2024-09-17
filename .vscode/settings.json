@@ -4,7 +4,7 @@
   "editor.formatOnType": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "always",
-    "source.organizeImports": "always",
+    "source.organizeImports": "always"
   },
   "files.associations": {
     "*.css": "tailwindcss"
@@ -38,7 +38,6 @@
   "editor.semanticHighlighting.enabled": true,
   "editor.smoothScrolling": true,
   "editor.suggestSelection": "first",
-  "editor.tabCompletion": "onlySnippets",
   "editor.tabSize": 2,
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
