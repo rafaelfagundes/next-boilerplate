@@ -1,20 +1,15 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { DM_Sans as SansSerif } from "next/font/google";
 
 import NavBar from "@/components/navbar";
 
 import "./globals.css";
 import Providers from "./providers";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const sansSerif = SansSerif({
+  subsets: ["latin"],
+  weight: "variable",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -36,11 +31,11 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${sansSerif.className} h-screen w-screen flex-grow antialiased`}
       >
         <Providers>
           <NavBar></NavBar>
-          {children}
+          <main className="flex-grow">{children}</main>
         </Providers>
       </body>
     </html>

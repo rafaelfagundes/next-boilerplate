@@ -60,7 +60,7 @@ export default function NavBar() {
         ))}
       </NavbarContent>
       <NavbarContent justify="end">
-        <ThemeSwitcher className="hidden lg:flex"></ThemeSwitcher>
+        <ThemeSwitcher className="hidden sm:flex"></ThemeSwitcher>
         <NavbarItem className="hidden lg:flex">
           <Link href="#">Login</Link>
         </NavbarItem>

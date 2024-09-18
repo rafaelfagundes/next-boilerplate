@@ -5,7 +5,7 @@ import { ThemeProvider } from "next-themes";
 
 function Providers({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <NextUIProvider>
+    <NextUIProvider className="flex h-full w-full flex-col">
       <ThemeProvider attribute="class" defaultTheme="dark">
         {children}
       </ThemeProvider>
