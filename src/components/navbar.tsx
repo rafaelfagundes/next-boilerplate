@@ -15,6 +15,7 @@ import {
 } from "@nextui-org/react";
 
 import { Logo } from "./logo";
+import { ThemeSwitcher } from "./theme-switcher";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -43,7 +44,7 @@ export default function NavBar() {
         />
         <NavbarBrand>
           <Logo />
-          <p className="ml-1 font-bold text-inherit text-red-500">
+          <p className="ml-1 font-bold text-inherit text-red-500 dark:text-red-400">
             Next.js Boilerplate
           </p>
         </NavbarBrand>
@@ -59,6 +60,7 @@ export default function NavBar() {
         ))}
       </NavbarContent>
       <NavbarContent justify="end">
+        <ThemeSwitcher className="hidden lg:flex"></ThemeSwitcher>
         <NavbarItem className="hidden lg:flex">
           <Link href="#">Login</Link>
         </NavbarItem>
@@ -87,6 +89,9 @@ export default function NavBar() {
             </Link>
           </NavbarMenuItem>
         ))}
+        <NavbarMenuItem className="mt-6">
+          <ThemeSwitcher></ThemeSwitcher>
+        </NavbarMenuItem>
       </NavbarMenu>
     </NextUINavbar>
   );
