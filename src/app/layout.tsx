@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans as SansSerif } from "next/font/google";
+import { Suspense } from "react";
 
 import NavBar from "@/components/navbar";
 
@@ -35,7 +36,9 @@ export default function RootLayout({
       >
         <Providers>
           <NavBar></NavBar>
-          <main className="flex-grow">{children}</main>
+          <main className="flex-grow">
+            <Suspense>{children}</Suspense>
+          </main>
         </Providers>
       </body>
     </html>

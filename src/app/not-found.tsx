@@ -3,17 +3,17 @@ import Link from "next/link";
 import { Button } from "@nextui-org/react";
 import { IconArrowLeft, IconMoodLookDown } from "@tabler/icons-react";
 
+import Title from "@/components/ui/title";
+
 export default function NotFound() {
   return (
     <div className="to-muted mt-16 flex flex-col items-center justify-center bg-gradient-to-b from-background p-4 text-foreground sm:mt-20">
       <div className="w-full max-w-md space-y-6 text-center">
-        <h1 className="text-8xl font-extrabold tracking-tight text-red-400 sm:text-9xl">
+        <span className="text-7xl font-extrabold tracking-tight text-red-400 sm:text-8xl">
           404
-        </h1>
+        </span>
         <div className="space-y-2">
-          <h2 className="text-3xl font-semibold tracking-tight">
-            Page not found
-          </h2>
+          <Title>Page not found</Title>
           <p className="text-muted-foreground text-xl">
             {"We couldn't find the page you're looking for."}
           </p>

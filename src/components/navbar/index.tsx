@@ -3,7 +3,6 @@
 import React from "react";
 
 import {
-  Button,
   Link,
   NavbarBrand,
   NavbarContent,
@@ -14,8 +13,9 @@ import {
   Navbar as NextUINavbar,
 } from "@nextui-org/react";
 
-import { Logo } from "./logo";
+import { Logo } from "../logo";
 import { ThemeSwitcher } from "./theme-switcher";
+import UserMenu from "./user-menu";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -45,7 +45,7 @@ export default function NavBar() {
         <NavbarBrand>
           <Logo />
           <p className="ml-1 font-bold text-inherit text-red-500 dark:text-red-400">
-            Next.js Boilerplate
+            NextBoilerplate
           </p>
         </NavbarBrand>
       </NavbarContent>
@@ -61,13 +61,8 @@ export default function NavBar() {
       </NavbarContent>
       <NavbarContent justify="end">
         <ThemeSwitcher className="hidden sm:flex"></ThemeSwitcher>
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
-          </Button>
+          <UserMenu></UserMenu>
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
