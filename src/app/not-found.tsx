@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { Button } from "@nextui-org/react";
-import { IconArrowLeft } from "@tabler/icons-react";
+import { IconArrowLeft, IconMoodLookDown } from "@tabler/icons-react";
 
 export default function NotFound() {
   return (
@@ -18,9 +18,13 @@ export default function NotFound() {
             {"We couldn't find the page you're looking for."}
           </p>
         </div>
-        <div className="bg-border h-px w-full" />
+
+        <IconMoodLookDown
+          className="mx-auto h-16 w-16"
+          stroke={1}
+        ></IconMoodLookDown>
         <div className="space-y-4">
-          <p className="text-muted-foreground">
+          <p className="text-muted-foreground opacity-75">
             {`It seems you've ventured into uncharted territory. Let's get you
             back on track.`}
           </p>
