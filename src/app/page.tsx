@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { Button } from "@nextui-org/react";
+
 export default function Home() {
   return (
     <div className="grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 p-8 pb-20 font-[family-name:var(--font-geist-sans)] sm:p-20">
@@ -48,6 +50,7 @@ export default function Home() {
             Read our docs
           </a>
         </div>
+        <Button>Test Button</Button>
       </main>
       <footer className="row-start-3 flex flex-wrap items-center justify-center gap-6">
         <a
