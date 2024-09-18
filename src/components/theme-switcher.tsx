@@ -14,8 +14,8 @@ export const ThemeSwitcher = ({
       defaultSelected
       size="lg"
       color="success"
-      startContent={<IconSun />}
-      endContent={<IconMoon />}
+      startContent={<IconMoon />}
+      endContent={<IconSun />}
       isSelected={currentTheme === "dark"}
       onValueChange={(value) => setTheme(value ? "dark" : "light")}
     ></Switch>
