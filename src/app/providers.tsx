@@ -5,11 +5,11 @@ import { ThemeProvider } from "next-themes";
 
 function Providers({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <NextUIProvider className="flex h-full w-full flex-col">
-      <ThemeProvider attribute="class" defaultTheme="dark">
+    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={true}>
+      <NextUIProvider className="flex h-full w-full flex-col">
         {children}
-      </ThemeProvider>
-    </NextUIProvider>
+      </NextUIProvider>
+    </ThemeProvider>
   );
 }
 
