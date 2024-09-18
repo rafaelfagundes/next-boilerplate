@@ -43,7 +43,9 @@ export default function NavBar() {
         />
         <NavbarBrand>
           <Logo />
-          <p className="font-bold text-inherit">ACME</p>
+          <p className="ml-1 font-bold text-inherit text-red-500">
+            Next.js Boilerplate
+          </p>
         </NavbarBrand>
       </NavbarContent>
 
