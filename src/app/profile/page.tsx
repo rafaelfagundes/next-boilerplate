@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 
 import {
@@ -10,15 +8,19 @@ import {
   CardFooter,
   CardHeader,
 } from "@nextui-org/react";
-import { useSession } from "next-auth/react";
+import { getServerSession } from "next-auth";
 
 // Add this import
 import Title from "@/components/ui/title";
+import options from "@/config/auth";
+import requireAuth from "@/utils/require-auth";
 
-export default function Profile() {
-  const { data } = useSession();
+export default async function Profile() {
+  await requireAuth();
+  const session = await getServerSession(options);
+
   const user = {
-    ...data?.user,
+    ...session?.user,
     plan: "7-day Trial",
     billingInfo: {
       cardType: "Visa",

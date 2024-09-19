@@ -1,14 +1,14 @@
 import React from "react";
 
-function Title({
+function Subtitle({
   children,
   className,
 }: Readonly<{ children: React.ReactNode; className?: string }>) {
   return (
-    <h1 className={`text-3xl font-semibold tracking-tight ${className}`}>
+    <div className={`text-muted-foreground text-center text-xl ${className}`}>
       {children}
-    </h1>
+    </div>
   );
 }
 
-export default Title;
+export default Subtitle;

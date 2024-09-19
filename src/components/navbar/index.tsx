@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import React from "react";
 
 import {
@@ -19,6 +20,7 @@ import UserMenu from "./user-menu";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const router = useRouter();
 
   const menuItems = [
     {
@@ -42,7 +44,10 @@ export default function NavBar() {
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
         />
-        <NavbarBrand>
+        <NavbarBrand
+          onClick={() => router.push("/")}
+          className="cursor-pointer"
+        >
           <Logo />
           <p className="ml-1 font-bold text-inherit text-red-500 dark:text-red-400">
             NextBoilerplate
@@ -50,10 +55,17 @@ export default function NavBar() {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden gap-4 sm:flex" justify="center">
+      <NavbarContent
+        className="hidden gap-8 sm:flex md:gap-16"
+        justify="center"
+      >
         {menuItems.map((item) => (
           <NavbarItem key={item.href}>
-            <Link color="foreground" href="/features">
+            <Link
+              color="foreground"
+              href={item.href}
+              className="text-sm hover:font-medium hover:underline"
+            >
               {item.name}
             </Link>
           </NavbarItem>
