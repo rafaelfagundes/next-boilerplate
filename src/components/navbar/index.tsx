@@ -49,7 +49,7 @@ export default function NavBar() {
           className="cursor-pointer"
         >
           <Logo />
-          <p className="ml-1 font-bold text-inherit text-red-500 dark:text-red-400">
+          <p className="ml-1 font-bold text-inherit text-purple-700 dark:text-purple-500">
             NextBoilerplate
           </p>
         </NavbarBrand>

@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import {
   Avatar,
   Button,
-  CircularProgress,
   Dropdown,
   DropdownItem,
   DropdownMenu,
@@ -18,11 +17,7 @@ export default function UserMenu() {
   const router = useRouter();
   const { data, status } = useSession();
 
-  if (status === "loading") {
-    return <CircularProgress size="md" />;
-  }
-
-  if (status === "unauthenticated") {
+  if (status === "unauthenticated" || status === "loading") {
     return (
       <Button
         size="md"

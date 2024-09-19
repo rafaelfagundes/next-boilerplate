@@ -81,14 +81,13 @@ export default function Support() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", { name, email, message });
     setName("");
     setEmail("");
     setMessage("");
   };
 
   return (
-    <div className="container mx-auto min-h-screen bg-background px-4 py-16">
+    <div className="container mx-auto bg-background px-4 py-16">
       <motion.span
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -128,7 +127,8 @@ export default function Support() {
             <Button
               type="submit"
               color="primary"
-              startContent={<IconSend size={18} />}
+              size="lg"
+              startContent={<IconSend size={24} />}
             >
               Send Message
             </Button>
