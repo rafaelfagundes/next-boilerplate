@@ -1,4 +1,4 @@
-# Next Boilerplate
+# Next.js Boilerplate
 
 A modern, feature-rich boilerplate for building scalable web applications with Next.js.
 
@@ -13,8 +13,6 @@ A modern, feature-rich boilerplate for building scalable web applications with N
 - [Tabler Icons](https://tabler.io/icons) for a comprehensive icon set
 - [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) for code quality
 - [Drizzle](https://www.drizzle.org/) for data persistence
-
-## Screenshots 📸
 
 ## Screenshots 📸
 
@@ -58,6 +56,15 @@ npm run dev
 ```
 
 Open http://localhost:3000 in your browser to see the result.
+
+## Project Structure 📁
+
+src/
+├── app/ # App Router pages and layouts
+├── components/ # Reusable UI components
+├── lib/ # Utility functions and shared logic
+├── styles/ # Global styles and Tailwind config
+└── types/ # TypeScript type definitions
 
 ## Available Scripts 📜
 
