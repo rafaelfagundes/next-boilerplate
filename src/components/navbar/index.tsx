@@ -38,7 +38,7 @@ export default function NavBar() {
   ];
 
   return (
-    <NextUINavbar onMenuOpenChange={setIsMenuOpen}>
+    <NextUINavbar onMenuOpenChange={setIsMenuOpen} maxWidth="xl">
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}

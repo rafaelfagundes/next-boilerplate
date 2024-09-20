@@ -14,6 +14,20 @@ A modern, feature-rich boilerplate for building scalable web applications with N
 - [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) for code quality
 - [Drizzle](https://www.drizzle.org/) for data persistence
 
+## Screenshots 📸
+
+## Screenshots 📸
+
+<img src="./screenshots/Screenshot_0.png" alt="Screenshot 0" style="max-width: 600px;">
+<img src="./screenshots/Screenshot_1.png" alt="Screenshot 1" style="max-width: 600px;">
+<img src="./screenshots/Screenshot_2.png" alt="Screenshot 2" style="max-width: 600px;">
+<img src="./screenshots/Screenshot_3.png" alt="Screenshot 3" style="max-width: 600px;">
+<img src="./screenshots/Screenshot_4.png" alt="Screenshot 4" style="max-width: 600px;">
+<img src="./screenshots/Screenshot_5.png" alt="Screenshot 5" style="max-width: 600px;">
+<img src="./screenshots/Screenshot_6.png" alt="Screenshot 6" style="max-width: 600px;">
+<img src="./screenshots/Screenshot_7.png" alt="Screenshot 7" style="max-width: 600px;">
+<img src="./screenshots/Screenshot_8.png" alt="Screenshot 8" style="max-width: 600px;">
+
 ## Getting Started 🚀
 
 1. Clone the repository:
