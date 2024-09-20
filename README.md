@@ -45,15 +45,6 @@ npm run dev
 
 Open http://localhost:3000 in your browser to see the result.
 
-## Project Structure 📁
-
-src/
-├── app/ # App Router pages and layouts
-├── components/ # Reusable UI components
-├── lib/ # Utility functions and shared logic
-├── styles/ # Global styles and Tailwind config
-└── types/ # TypeScript type definitions
-
 ## Available Scripts 📜
 
 - npm run dev: Start the development server
