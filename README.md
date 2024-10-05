@@ -33,10 +33,10 @@ A modern, feature-rich boilerplate for building scalable web applications with N
 <img src="./screenshots/Screenshot_5.png" alt="Screenshot 5" style="max-width: 600px;">
 
 ### Profile Page
-<img src="./screenshots/Screenshot_6.png" alt="Screenshot 6" style="max-width: 600px;">
+<img src="./screenshots/Screenshot_7.png" alt="Screenshot 7" style="max-width: 600px;">
 
 ### Sign Up Page
-<img src="./screenshots/Screenshot_7.png" alt="Screenshot 7" style="max-width: 600px;">
+<img src="./screenshots/Screenshot_6.png" alt="Screenshot 6" style="max-width: 600px;">
 
 ### Login Page
 <img src="./screenshots/Screenshot_8.png" alt="Screenshot 8" style="max-width: 600px;">
