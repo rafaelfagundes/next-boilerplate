@@ -1,4 +1,4 @@
-# Next.js Boilerplate
+# Next Boilerplate
 
 A modern, feature-rich boilerplate for building scalable web applications with Next.js.
 
